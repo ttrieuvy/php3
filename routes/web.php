@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ControllerNews as News;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,15 +13,9 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/', function () {
+Route::get('/', function(){
     return view('trangchu');
 });
-
-Route::get('/about', function(){
-    return view('about');
-});
-
-Route::get('/news', function(){
-    return view('news');
-});
+Route::get('/tin-tuc', [News::class, 'news']);
+Route::get('bai-viet/{id}', [News::class, 'content']);
+Route::get('/lien-he', [News::class, 'contact']);

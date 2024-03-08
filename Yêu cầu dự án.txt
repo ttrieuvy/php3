@@ -1,3 +1,0 @@
--   tạo website 3 trang tĩnh
-    *route điều hướng
-    *view

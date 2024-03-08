@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Đây là trang chủ</title>
-</head>
-<body>
-    <h1>Trang chủ nè</h1>
-</body>
-</html>
+@extends('layout.mainLayout')
+@section('title')
+        Trang chủuu
+    @endsection
+   @section('contents')
+       <h1>Nội dung</h1>
+   @endsection
+
+    {{-- <img src="{{asset('/vendors/z5089541447733_7713446acc8d146a19c499c7a48f51be.jpg') }}" alt="anh" height="100"> --}}
